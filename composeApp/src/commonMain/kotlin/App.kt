@@ -123,7 +123,6 @@ fun Home() {
                 .offset(y = animatedOffsetY)
                 .pointerInput(Unit) {
                     detectVerticalDragGestures(
-                        onDragStart = { /* Optionally handle drag start */ },
                         onDragEnd = { offsetY = 0f },
                         onDragCancel = { offsetY = 0f },
                         onVerticalDrag = { _, dragAmount ->
